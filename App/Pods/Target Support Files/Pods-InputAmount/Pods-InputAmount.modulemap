@@ -1,0 +1,6 @@
+framework module Pods_InputAmount {
+  umbrella header "Pods-InputAmount-umbrella.h"
+
+  export *
+  module * { export * }
+}

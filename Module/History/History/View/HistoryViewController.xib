@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HistoryViewController" customModule="History" customModuleProvider="target">
+            <connections>
+                <outlet property="filterByDate" destination="cWT-mO-qbA" id="fI8-7I-fCC"/>
+                <outlet property="filterCashIn" destination="Bh8-gT-SlJ" id="PPD-Bd-8Pf"/>
+                <outlet property="filterCashOut" destination="Ajh-e5-ZJP" id="XXg-En-o2n"/>
+                <outlet property="tableView" destination="Moo-B3-k52" id="LN9-uU-OeY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Moo-B3-k52">
+                    <rect key="frame" x="0.0" y="165.5" width="414" height="696.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcI-kP-tke">
+                    <rect key="frame" x="16" y="89" width="86" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="omK-zp-qYf"/>
+                    </constraints>
+                    <state key="normal" title="History" image="ArrowLeft_Icon">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="UeE-yV-Uar"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajh-e5-ZJP" userLabel="Button Filter CashOut">
+                    <rect key="frame" x="16" y="775" width="57" height="57"/>
+                    <color key="backgroundColor" name="White_Zwallet"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="57" id="TtU-3Q-g6d"/>
+                        <constraint firstAttribute="height" constant="57" id="p79-mW-8dH"/>
+                    </constraints>
+                    <state key="normal" image="Arrow_Up"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="filterByCashOutAction:" destination="-1" eventType="touchUpInside" id="bcH-IE-IYs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWT-mO-qbA">
+                    <rect key="frame" x="190" y="775" width="208" height="57"/>
+                    <color key="backgroundColor" name="White_Zwallet"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="0xT-mR-eyc"/>
+                    </constraints>
+                    <state key="normal" title="Filter By Date"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bh8-gT-SlJ" userLabel="Button Filter CashIn">
+                    <rect key="frame" x="103" y="775" width="57" height="57"/>
+                    <color key="backgroundColor" name="White_Zwallet"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="uUd-GW-0db"/>
+                        <constraint firstAttribute="width" constant="57" id="zbs-8F-l4g"/>
+                    </constraints>
+                    <state key="normal" image="Arrow_Bottom"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="filterByCashInAction:" destination="-1" eventType="touchUpInside" id="UUx-Q1-a6f"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="cWT-mO-qbA" firstAttribute="leading" secondItem="Bh8-gT-SlJ" secondAttribute="trailing" constant="30" id="1mo-cK-lLL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cWT-mO-qbA" secondAttribute="trailing" constant="16" id="E6X-oY-6T9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Moo-B3-k52" secondAttribute="bottom" id="MNn-Jc-UHU"/>
+                <constraint firstItem="mcI-kP-tke" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="45" id="Oxe-eZ-TEm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ajh-e5-ZJP" secondAttribute="bottom" constant="30" id="QxU-5H-ZW6"/>
+                <constraint firstItem="Ajh-e5-ZJP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="RmD-o8-HlW"/>
+                <constraint firstItem="Bh8-gT-SlJ" firstAttribute="leading" secondItem="Ajh-e5-ZJP" secondAttribute="trailing" constant="30" id="Rsq-fw-ety"/>
+                <constraint firstItem="mcI-kP-tke" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="asN-dV-Ugl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Moo-B3-k52" secondAttribute="trailing" id="bNg-Px-dgf"/>
+                <constraint firstItem="Bh8-gT-SlJ" firstAttribute="bottom" secondItem="Ajh-e5-ZJP" secondAttribute="bottom" id="e2p-kM-JtO"/>
+                <constraint firstItem="cWT-mO-qbA" firstAttribute="bottom" secondItem="Bh8-gT-SlJ" secondAttribute="bottom" id="pkP-U3-1kW"/>
+                <constraint firstItem="Moo-B3-k52" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vM1-d9-cDe"/>
+                <constraint firstItem="Moo-B3-k52" firstAttribute="top" secondItem="mcI-kP-tke" secondAttribute="bottom" constant="44.5" id="xIC-hQ-J5k"/>
+            </constraints>
+            <point key="canvasLocation" x="-55.072463768115945" y="69.642857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ArrowLeft_Icon" width="28" height="28"/>
+        <image name="Arrow_Bottom" width="28" height="28"/>
+        <image name="Arrow_Up" width="28" height="28"/>
+        <namedColor name="White_Zwallet">
+            <color red="0.98039215686274506" green="0.9882352941176471" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

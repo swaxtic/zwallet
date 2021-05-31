@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmationTransactionViewController" customModule="ConfirmationTransaction" customModuleProvider="target">
+            <connections>
+                <outlet property="backButtonUI" destination="O43-rK-Big" id="eQy-rN-bz6"/>
+                <outlet property="tableView" destination="yxx-jY-w6b" id="mgn-lw-IcW"/>
+                <outlet property="view" destination="DQQ-Af-rm2" id="a1m-02-fE5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="DQQ-Af-rm2">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xpO-16-CzS">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O43-rK-Big">
+                            <rect key="frame" x="16" y="45" width="28" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="28" id="5Ey-je-JBn"/>
+                                <constraint firstAttribute="height" constant="28" id="ZGu-Py-zzB"/>
+                            </constraints>
+                            <color key="tintColor" name="Black_Text"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" name="Black_Text"/>
+                            </state>
+                            <connections>
+                                <action selector="backButtonAction:" destination="-1" eventType="touchUpInside" id="nrw-fa-xVe"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDa-jJ-QFC">
+                            <rect key="frame" x="70" y="47.5" width="115.5" height="23.5"/>
+                            <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="20"/>
+                            <color key="textColor" name="Black_Text"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yxx-jY-w6b">
+                            <rect key="frame" x="0.0" y="98" width="414" height="720"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" name="White_Zwallet"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="yxx-jY-w6b" secondAttribute="trailing" id="5tP-3C-md5"/>
+                        <constraint firstItem="O43-rK-Big" firstAttribute="leading" secondItem="xpO-16-CzS" secondAttribute="leading" constant="16" id="YHO-k0-DZW"/>
+                        <constraint firstItem="O43-rK-Big" firstAttribute="top" secondItem="xpO-16-CzS" secondAttribute="top" constant="45" id="Ylc-hA-OOe"/>
+                        <constraint firstItem="yxx-jY-w6b" firstAttribute="leading" secondItem="xpO-16-CzS" secondAttribute="leading" id="az9-rK-5Pi"/>
+                        <constraint firstAttribute="bottom" secondItem="yxx-jY-w6b" secondAttribute="bottom" id="jfz-Bg-1lt"/>
+                        <constraint firstItem="yxx-jY-w6b" firstAttribute="top" secondItem="wDa-jJ-QFC" secondAttribute="bottom" constant="27" id="nY3-eQ-W9W"/>
+                        <constraint firstItem="wDa-jJ-QFC" firstAttribute="centerY" secondItem="O43-rK-Big" secondAttribute="centerY" id="riy-8Q-uja"/>
+                        <constraint firstItem="wDa-jJ-QFC" firstAttribute="leading" secondItem="O43-rK-Big" secondAttribute="trailing" constant="26" id="zT6-99-Mmn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="93l-7J-Nly"/>
+            <color key="backgroundColor" name="White_Zwallet"/>
+            <constraints>
+                <constraint firstItem="xpO-16-CzS" firstAttribute="leading" secondItem="93l-7J-Nly" secondAttribute="leading" id="1Ft-fO-29H"/>
+                <constraint firstItem="xpO-16-CzS" firstAttribute="top" secondItem="93l-7J-Nly" secondAttribute="top" id="G69-AS-4TZ"/>
+                <constraint firstItem="93l-7J-Nly" firstAttribute="trailing" secondItem="xpO-16-CzS" secondAttribute="trailing" id="JfI-Rx-XbF"/>
+                <constraint firstItem="93l-7J-Nly" firstAttribute="bottom" secondItem="xpO-16-CzS" secondAttribute="bottom" id="wOk-8j-43v"/>
+            </constraints>
+            <point key="canvasLocation" x="-55.072463768115945" y="81.696428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Black_Text">
+            <color red="0.22699999809265137" green="0.23899999260902405" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White_Zwallet">
+            <color red="0.98039215686274506" green="0.9882352941176471" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

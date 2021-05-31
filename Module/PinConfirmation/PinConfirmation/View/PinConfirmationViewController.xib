@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PinConfirmationViewController" customModule="PinConfirmation" customModuleProvider="target">
+            <connections>
+                <outlet property="backButtonUI" destination="BA7-bU-Vcd" id="Lu3-cN-gui"/>
+                <outlet property="otpTextFieldView" destination="PKH-wI-MGu" id="0wd-Ru-1e1"/>
+                <outlet property="view" destination="qDh-Ej-IIL" id="6Xg-xh-cKA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="qDh-Ej-IIL">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RAd-uN-asU">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BA7-bU-Vcd">
+                            <rect key="frame" x="16" y="45" width="28" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="Lc7-wk-CiS"/>
+                                <constraint firstAttribute="width" constant="28" id="zja-Kc-pLw"/>
+                            </constraints>
+                            <color key="tintColor" name="Black_Text"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" name="Black_Text"/>
+                            </state>
+                            <connections>
+                                <action selector="backButtonAction:" destination="-1" eventType="touchUpInside" id="VbU-F0-UR3"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your Pin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Gi-gp-keS">
+                            <rect key="frame" x="70" y="47.5" width="127" height="23.5"/>
+                            <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="20"/>
+                            <color key="textColor" name="Black_Text"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4O-a0-9pA">
+                            <rect key="frame" x="16" y="728" width="382" height="57"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="57" id="CYG-jt-uuL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="18"/>
+                            <state key="normal" title="Transfer Now">
+                                <color key="titleColor" red="0.98039215690000003" green="0.98823529409999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="transferButtonAction:" destination="-1" eventType="touchUpInside" id="NPG-ns-4Za"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your 6 digits PIN for confirmation to continue transferring money. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NB-FF-yaM">
+                            <rect key="frame" x="16" y="111" width="382" height="37.5"/>
+                            <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                            <color key="textColor" name="Grey_Dark"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PKH-wI-MGu" customClass="OTPFieldView" customModule="OTPFieldView">
+                            <rect key="frame" x="16" y="198.5" width="382" height="65"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="65" id="Ikr-Tk-Eat"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="H4O-a0-9pA" firstAttribute="leading" secondItem="RAd-uN-asU" secondAttribute="leading" constant="16" id="4C6-yR-Y6v"/>
+                        <constraint firstAttribute="bottom" secondItem="H4O-a0-9pA" secondAttribute="bottom" constant="33" id="5uz-kj-fOn"/>
+                        <constraint firstItem="BA7-bU-Vcd" firstAttribute="top" secondItem="RAd-uN-asU" secondAttribute="top" constant="45" id="GzK-XF-BsN"/>
+                        <constraint firstAttribute="trailing" secondItem="H4O-a0-9pA" secondAttribute="trailing" constant="16" id="IFr-yz-djp"/>
+                        <constraint firstItem="0NB-FF-yaM" firstAttribute="centerX" secondItem="RAd-uN-asU" secondAttribute="centerX" id="N03-y7-glT"/>
+                        <constraint firstAttribute="trailing" secondItem="0NB-FF-yaM" secondAttribute="trailing" constant="16" id="Tnh-DQ-9KT"/>
+                        <constraint firstItem="PKH-wI-MGu" firstAttribute="top" secondItem="0NB-FF-yaM" secondAttribute="bottom" constant="50" id="UKB-Su-D7a"/>
+                        <constraint firstItem="PKH-wI-MGu" firstAttribute="leading" secondItem="RAd-uN-asU" secondAttribute="leading" constant="16" id="W2u-D9-Ewv"/>
+                        <constraint firstAttribute="trailing" secondItem="PKH-wI-MGu" secondAttribute="trailing" constant="16" id="XGt-zx-NqK"/>
+                        <constraint firstItem="8Gi-gp-keS" firstAttribute="centerY" secondItem="BA7-bU-Vcd" secondAttribute="centerY" id="ZDa-Z2-DcD"/>
+                        <constraint firstItem="8Gi-gp-keS" firstAttribute="leading" secondItem="BA7-bU-Vcd" secondAttribute="trailing" constant="26" id="gzX-S8-1iu"/>
+                        <constraint firstItem="0NB-FF-yaM" firstAttribute="top" secondItem="8Gi-gp-keS" secondAttribute="bottom" constant="40" id="oON-fM-HUP"/>
+                        <constraint firstItem="BA7-bU-Vcd" firstAttribute="leading" secondItem="RAd-uN-asU" secondAttribute="leading" constant="16" id="q4o-ei-2Kq"/>
+                        <constraint firstItem="0NB-FF-yaM" firstAttribute="leading" secondItem="RAd-uN-asU" secondAttribute="leading" constant="16" id="tqE-Ze-FeS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="prb-FU-Pbv"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="RAd-uN-asU" firstAttribute="leading" secondItem="prb-FU-Pbv" secondAttribute="leading" id="0Op-48-CVg"/>
+                <constraint firstItem="prb-FU-Pbv" firstAttribute="bottom" secondItem="RAd-uN-asU" secondAttribute="bottom" id="FHv-dR-BAC"/>
+                <constraint firstItem="prb-FU-Pbv" firstAttribute="trailing" secondItem="RAd-uN-asU" secondAttribute="trailing" id="nO4-Et-2N8"/>
+                <constraint firstItem="RAd-uN-asU" firstAttribute="top" secondItem="prb-FU-Pbv" secondAttribute="top" id="swM-YW-Zof"/>
+            </constraints>
+            <point key="canvasLocation" x="-55.072463768115945" y="81.696428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Black_Text">
+            <color red="0.22699999809265137" green="0.23899999260902405" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Grey_Dark">
+            <color red="0.4779999852180481" green="0.47099998593330383" blue="0.52499997615814209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

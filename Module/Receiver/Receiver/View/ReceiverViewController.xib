@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReceiverViewController" customModule="Receiver" customModuleProvider="target">
+            <connections>
+                <outlet property="labelContactCount" destination="3Q3-B2-ohw" id="vag-e1-UXC"/>
+                <outlet property="loadingIndicator" destination="RaS-6x-5ZY" id="Hif-6X-AA1"/>
+                <outlet property="receiverTableView" destination="uQ8-X0-k41" id="RaI-ZL-0uw"/>
+                <outlet property="searchContact" destination="LNf-In-IDB" id="05l-1E-dMt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NBy-Th-o3e" userLabel="BackButton">
+                    <rect key="frame" x="16" y="89" width="158.5" height="28"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-left" translatesAutoresizingMaskIntoConstraints="NO" id="pRi-go-bSl">
+                            <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="28" id="5rI-04-Kvj"/>
+                                <constraint firstAttribute="height" constant="28" id="lKm-mO-eV5"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Receiver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6z8-kT-daD">
+                            <rect key="frame" x="36" y="0.0" width="122.5" height="28"/>
+                            <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="ODu-jV-9LF" appends="YES" id="szI-p3-rle"/>
+                    </connections>
+                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uQ8-X0-k41">
+                    <rect key="frame" x="0.0" y="323.5" width="414" height="538.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Contacts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9u-NR-OJN">
+                    <rect key="frame" x="16" y="251" width="98" height="21"/>
+                    <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="18"/>
+                    <color key="textColor" name="Black_Text"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Q3-B2-ohw">
+                    <rect key="frame" x="16" y="282" width="34.5" height="16.5"/>
+                    <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="14"/>
+                    <color key="textColor" name="Grey_Text"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search receiver here" translatesAutoresizingMaskIntoConstraints="NO" id="LNf-In-IDB">
+                    <rect key="frame" x="10" y="157" width="394" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="E9r-GZ-1yY"/>
+                    </constraints>
+                    <offsetWrapper key="searchTextPositionAdjustment" horizontal="5" vertical="0.0"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="RaS-6x-5ZY">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                    <color key="color" name="ZwalletPrimary"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="uQ8-X0-k41" firstAttribute="top" secondItem="3Q3-B2-ohw" secondAttribute="bottom" constant="25" id="5HX-5E-IQN"/>
+                <constraint firstItem="s9u-NR-OJN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="6WP-cH-eqh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uQ8-X0-k41" secondAttribute="trailing" id="6cN-wP-mdG"/>
+                <constraint firstItem="LNf-In-IDB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="8eC-z7-EvE"/>
+                <constraint firstItem="3Q3-B2-ohw" firstAttribute="top" secondItem="s9u-NR-OJN" secondAttribute="bottom" constant="10" id="BT8-gc-ooC"/>
+                <constraint firstItem="RaS-6x-5ZY" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="GoA-Qo-4pB"/>
+                <constraint firstItem="3Q3-B2-ohw" firstAttribute="leading" secondItem="s9u-NR-OJN" secondAttribute="leading" id="JU5-wv-xpg"/>
+                <constraint firstItem="NBy-Th-o3e" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="45" id="QkF-ll-DZx"/>
+                <constraint firstItem="NBy-Th-o3e" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="dOR-bV-w46"/>
+                <constraint firstItem="uQ8-X0-k41" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eBS-MR-QyO"/>
+                <constraint firstItem="LNf-In-IDB" firstAttribute="top" secondItem="6z8-kT-daD" secondAttribute="bottom" constant="40" id="iAV-9E-gWO"/>
+                <constraint firstItem="s9u-NR-OJN" firstAttribute="top" secondItem="LNf-In-IDB" secondAttribute="bottom" constant="40" id="pgi-n3-Js2"/>
+                <constraint firstItem="RaS-6x-5ZY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vFB-wv-LaR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="uQ8-X0-k41" secondAttribute="bottom" id="wAe-Ly-VOx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LNf-In-IDB" secondAttribute="trailing" constant="10" id="xhv-CV-2Ah"/>
+            </constraints>
+            <point key="canvasLocation" x="-55.200000000000003" y="84.107946026986511"/>
+        </view>
+        <tapGestureRecognizer id="ODu-jV-9LF" userLabel="backtap">
+            <connections>
+                <action selector="backTapAction:" destination="-1" id="hap-qE-8NT"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="arrow-left" width="84" height="84"/>
+        <namedColor name="Black_Text">
+            <color red="0.22699999809265137" green="0.23899999260902405" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Grey_Text">
+            <color red="0.56099998950958252" green="0.56099998950958252" blue="0.56099998950958252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ZwalletPrimary">
+            <color red="0.3880000114440918" green="0.47499999403953552" blue="0.9570000171661377" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

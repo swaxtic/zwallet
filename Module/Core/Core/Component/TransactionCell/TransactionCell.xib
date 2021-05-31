@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="159" id="KGk-i7-Jjw" customClass="TransactionCell" customModule="Core" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hiL-bC-V79">
+                        <rect key="frame" x="5" y="12" width="365" height="96"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZBY-dl-7Q4">
+                                <rect key="frame" x="87" y="20" width="30" height="56"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQi-mG-RbY">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="39.5"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="16"/>
+                                        <color key="textColor" name="Black_Text"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipz-Zo-Dq2">
+                                        <rect key="frame" x="0.0" y="39.5" width="30" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="14"/>
+                                        <color key="textColor" name="Grey_Dark"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="kNO-gg-TlY"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jvp-in-2SX">
+                                <rect key="frame" x="277.5" y="37.5" width="71.5" height="21"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AGc-nw-vD1">
+                                <rect key="frame" x="16" y="20" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="Ebe-de-Vck"/>
+                                    <constraint firstAttribute="height" constant="56" id="GM3-jc-R11"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZBY-dl-7Q4" firstAttribute="leading" secondItem="AGc-nw-vD1" secondAttribute="trailing" constant="15" id="3bq-iF-6qn"/>
+                            <constraint firstItem="AGc-nw-vD1" firstAttribute="centerY" secondItem="hiL-bC-V79" secondAttribute="centerY" id="62B-jL-8od"/>
+                            <constraint firstItem="AGc-nw-vD1" firstAttribute="leading" secondItem="hiL-bC-V79" secondAttribute="leading" constant="16" id="IU8-qj-ugK"/>
+                            <constraint firstItem="ZBY-dl-7Q4" firstAttribute="centerY" secondItem="hiL-bC-V79" secondAttribute="centerY" id="WYc-D9-ByV"/>
+                            <constraint firstItem="AGc-nw-vD1" firstAttribute="centerY" secondItem="hiL-bC-V79" secondAttribute="centerY" id="ZyA-j2-lw6"/>
+                            <constraint firstAttribute="trailing" secondItem="Jvp-in-2SX" secondAttribute="trailing" constant="16" id="gF6-9f-DMn"/>
+                            <constraint firstItem="Jvp-in-2SX" firstAttribute="centerY" secondItem="hiL-bC-V79" secondAttribute="centerY" id="hZi-Bc-mcU"/>
+                            <constraint firstItem="AGc-nw-vD1" firstAttribute="centerY" secondItem="hiL-bC-V79" secondAttribute="centerY" id="qTo-de-doD"/>
+                            <constraint firstItem="AGc-nw-vD1" firstAttribute="top" secondItem="hiL-bC-V79" secondAttribute="top" constant="20" symbolic="YES" id="vhf-jr-xvm"/>
+                            <constraint firstAttribute="bottom" secondItem="AGc-nw-vD1" secondAttribute="bottom" constant="20" symbolic="YES" id="z3U-ek-yPC"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hiL-bC-V79" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5ph-rH-tvG"/>
+                    <constraint firstItem="hiL-bC-V79" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="LDU-L4-qVY"/>
+                    <constraint firstItem="hiL-bC-V79" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="gOq-em-weN"/>
+                    <constraint firstAttribute="trailing" secondItem="hiL-bC-V79" secondAttribute="trailing" constant="5" id="ivm-01-dEl"/>
+                    <constraint firstAttribute="bottom" secondItem="hiL-bC-V79" secondAttribute="bottom" constant="12" id="jpK-aC-9o5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amountLabel" destination="Jvp-in-2SX" id="6dz-E2-W9D"/>
+                <outlet property="cellView" destination="hiL-bC-V79" id="Bfk-qJ-OkS"/>
+                <outlet property="nameLabel" destination="XQi-mG-RbY" id="0BY-6c-IjL"/>
+                <outlet property="noteLabel" destination="ipz-Zo-Dq2" id="bRl-WK-uer"/>
+                <outlet property="userImage" destination="AGc-nw-vD1" id="Atf-UA-KCi"/>
+            </connections>
+            <point key="canvasLocation" x="116.66666666666667" y="93.415178571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Black_Text">
+            <color red="0.22699999809265137" green="0.23899999260902405" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Grey_Dark">
+            <color red="0.4779999852180481" green="0.47099998593330383" blue="0.52499997615814209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

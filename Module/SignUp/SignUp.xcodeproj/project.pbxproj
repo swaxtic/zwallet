@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26364D4832FC9B5C6F1B6E0F /* Pods_SignUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FB13B859E1AC12A114CD7E /* Pods_SignUp.framework */; };
+		FA282515265DE4AA00D084BC /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA282514265DE4AA00D084BC /* Core.framework */; };
+		FA282516265DE4AA00D084BC /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA282514265DE4AA00D084BC /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA28251F265DE50300D084BC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28251D265DE50300D084BC /* SignUpViewController.swift */; };
+		FA282520265DE50300D084BC /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA28251E265DE50300D084BC /* SignUpViewController.xib */; };
+		FA282522265DE9EB00D084BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA282521265DE9EB00D084BC /* Assets.xcassets */; };
+		FA282531265E04AD00D084BC /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA282530265E04AD00D084BC /* SignUpRouter.swift */; };
+		FA282533265E050800D084BC /* SignUpRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA282532265E050800D084BC /* SignUpRouterImpl.swift */; };
+		FA282535265E073B00D084BC /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA282534265E073B00D084BC /* SignUpInteractor.swift */; };
+		FA282537265E074700D084BC /* SignUpInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA282536265E074700D084BC /* SignUpInteractorImpl.swift */; };
+		FA282539265E075B00D084BC /* SignUpInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA282538265E075B00D084BC /* SignUpInteractorOutput.swift */; };
+		FA282540265E103700D084BC /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28253F265E103700D084BC /* SignUpPresenter.swift */; };
+		FA282542265E104800D084BC /* SignUpPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA282541265E104800D084BC /* SignUpPresenterImpl.swift */; };
+		FA282544265E10CE00D084BC /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA282543265E10CE00D084BC /* SignUpView.swift */; };
+		FADEA2F6265DE36500596759 /* SignUp.h in Headers */ = {isa = PBXBuildFile; fileRef = FADEA2F4265DE36500596759 /* SignUp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA282517265DE4AB00D084BC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FA282516265DE4AA00D084BC /* Core.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		58FB13B859E1AC12A114CD7E /* Pods_SignUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA69B2837928551263DC958 /* Pods-SignUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignUp.release.xcconfig"; path = "Target Support Files/Pods-SignUp/Pods-SignUp.release.xcconfig"; sourceTree = "<group>"; };
+		80A180F37B2DDFD5E01FD5FE /* Pods-SignUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignUp.debug.xcconfig"; path = "Target Support Files/Pods-SignUp/Pods-SignUp.debug.xcconfig"; sourceTree = "<group>"; };
+		FA282514265DE4AA00D084BC /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA28251D265DE50300D084BC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FA28251E265DE50300D084BC /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		FA282521265DE9EB00D084BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA282530265E04AD00D084BC /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
+		FA282532265E050800D084BC /* SignUpRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouterImpl.swift; sourceTree = "<group>"; };
+		FA282534265E073B00D084BC /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
+		FA282536265E074700D084BC /* SignUpInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractorImpl.swift; sourceTree = "<group>"; };
+		FA282538265E075B00D084BC /* SignUpInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractorOutput.swift; sourceTree = "<group>"; };
+		FA28253F265E103700D084BC /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		FA282541265E104800D084BC /* SignUpPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenterImpl.swift; sourceTree = "<group>"; };
+		FA282543265E10CE00D084BC /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		FADEA2F1265DE36500596759 /* SignUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SignUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADEA2F4265DE36500596759 /* SignUp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUp.h; sourceTree = "<group>"; };
+		FADEA2F5265DE36500596759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FADEA2EE265DE36500596759 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26364D4832FC9B5C6F1B6E0F /* Pods_SignUp.framework in Frameworks */,
+				FA282515265DE4AA00D084BC /* Core.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28C4488A5A102264C6C635A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA282514265DE4AA00D084BC /* Core.framework */,
+				58FB13B859E1AC12A114CD7E /* Pods_SignUp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F64CD999D6622CD961F0AB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80A180F37B2DDFD5E01FD5FE /* Pods-SignUp.debug.xcconfig */,
+				5DA69B2837928551263DC958 /* Pods-SignUp.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../App/Pods;
+			sourceTree = "<group>";
+		};
+		FA28251C265DE4E100D084BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA28251D265DE50300D084BC /* SignUpViewController.swift */,
+				FA28251E265DE50300D084BC /* SignUpViewController.xib */,
+				FA282543265E10CE00D084BC /* SignUpView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA28252D265E047300D084BC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FA282530265E04AD00D084BC /* SignUpRouter.swift */,
+				FA282532265E050800D084BC /* SignUpRouterImpl.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FA28252E265E047F00D084BC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FA282534265E073B00D084BC /* SignUpInteractor.swift */,
+				FA282536265E074700D084BC /* SignUpInteractorImpl.swift */,
+				FA282538265E075B00D084BC /* SignUpInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FA28252F265E048500D084BC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FA28253F265E103700D084BC /* SignUpPresenter.swift */,
+				FA282541265E104800D084BC /* SignUpPresenterImpl.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FADEA2E7265DE36500596759 = {
+			isa = PBXGroup;
+			children = (
+				FADEA2F3265DE36500596759 /* SignUp */,
+				FADEA2F2265DE36500596759 /* Products */,
+				3F64CD999D6622CD961F0AB0 /* Pods */,
+				28C4488A5A102264C6C635A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FADEA2F2265DE36500596759 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FADEA2F1265DE36500596759 /* SignUp.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FADEA2F3265DE36500596759 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				FA28252F265E048500D084BC /* Presenter */,
+				FA28252E265E047F00D084BC /* Interactor */,
+				FA28252D265E047300D084BC /* Router */,
+				FA28251C265DE4E100D084BC /* View */,
+				FADEA2F4265DE36500596759 /* SignUp.h */,
+				FADEA2F5265DE36500596759 /* Info.plist */,
+				FA282521265DE9EB00D084BC /* Assets.xcassets */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FADEA2EC265DE36500596759 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADEA2F6265DE36500596759 /* SignUp.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FADEA2F0265DE36500596759 /* SignUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADEA2F9265DE36500596759 /* Build configuration list for PBXNativeTarget "SignUp" */;
+			buildPhases = (
+				27773811747E249A6AB5A291 /* [CP] Check Pods Manifest.lock */,
+				FADEA2EC265DE36500596759 /* Headers */,
+				FADEA2ED265DE36500596759 /* Sources */,
+				FADEA2EE265DE36500596759 /* Frameworks */,
+				FADEA2EF265DE36500596759 /* Resources */,
+				FA282517265DE4AB00D084BC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SignUp;
+			productName = SignUp;
+			productReference = FADEA2F1265DE36500596759 /* SignUp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FADEA2E8265DE36500596759 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					FADEA2F0265DE36500596759 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+				};
+			};
+			buildConfigurationList = FADEA2EB265DE36500596759 /* Build configuration list for PBXProject "SignUp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FADEA2E7265DE36500596759;
+			productRefGroup = FADEA2F2265DE36500596759 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FADEA2F0265DE36500596759 /* SignUp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FADEA2EF265DE36500596759 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA282522265DE9EB00D084BC /* Assets.xcassets in Resources */,
+				FA282520265DE50300D084BC /* SignUpViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27773811747E249A6AB5A291 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SignUp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FADEA2ED265DE36500596759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA282537265E074700D084BC /* SignUpInteractorImpl.swift in Sources */,
+				FA282539265E075B00D084BC /* SignUpInteractorOutput.swift in Sources */,
+				FA28251F265DE50300D084BC /* SignUpViewController.swift in Sources */,
+				FA282531265E04AD00D084BC /* SignUpRouter.swift in Sources */,
+				FA282542265E104800D084BC /* SignUpPresenterImpl.swift in Sources */,
+				FA282540265E103700D084BC /* SignUpPresenter.swift in Sources */,
+				FA282535265E073B00D084BC /* SignUpInteractor.swift in Sources */,
+				FA282544265E10CE00D084BC /* SignUpView.swift in Sources */,
+				FA282533265E050800D084BC /* SignUpRouterImpl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FADEA2F7265DE36500596759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FADEA2F8265DE36500596759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FADEA2FA265DE36500596759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80A180F37B2DDFD5E01FD5FE /* Pods-SignUp.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SignUp/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.casestudy.SignUp;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FADEA2FB265DE36500596759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DA69B2837928551263DC958 /* Pods-SignUp.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SignUp/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.casestudy.SignUp;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FADEA2EB265DE36500596759 /* Build configuration list for PBXProject "SignUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADEA2F7265DE36500596759 /* Debug */,
+				FADEA2F8265DE36500596759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADEA2F9265DE36500596759 /* Build configuration list for PBXNativeTarget "SignUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADEA2FA265DE36500596759 /* Debug */,
+				FADEA2FB265DE36500596759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FADEA2E8265DE36500596759 /* Project object */;
+}
