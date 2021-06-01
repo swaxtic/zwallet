@@ -22,7 +22,7 @@ Third party dependencies
 - [Netfox](https://github.com/kasketis/netfox)
 
 ## Screenshoot
-Here some screenshot of Zwallet App
+Here some screenshot of Zwallet App  
 [<img src="/Screenshot/Login.png" width="250"/>](Login)
 [<img src="/Screenshot/Home.png" width="250"/>](Home)
 [<img src="/Screenshot/FindReceiver.png" width="250"/>](FindReceiver)
