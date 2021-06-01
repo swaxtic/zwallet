@@ -1,5 +1,5 @@
-# MyMonee
-![Swift version](https://img.shields.io/badge/Swift-5.0-brightgreen) ![Cocoapods](https://img.shields.io/badge/Cocoapods-1.10.1-brightgreen)
+# Zwallet
+![Swift version](https://img.shields.io/badge/Swift-5.0-brightgreen) ![Cocoapods](https://img.shields.io/badge/Cocoapods-1.10.1-brightgreen) ![Minimum IOS](https://img.shields.io/badge/IOS-11.0-brightgreen)
 
 ![showcase](Screenshot/Showcase.png)
 
